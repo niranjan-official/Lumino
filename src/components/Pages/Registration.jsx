@@ -3,9 +3,9 @@ import React from "react";
 const Registration = () => {
   return (
     <section>
-      <div className="w-full flex p-4 sm:p-10 lg:px-16">
-        <div className="w-1/2 flex justify-center">
-          <div className="w-1/2 p-5 shadow shadow-neutral-500 reg-bg pb-16">
+      <div className="w-full flex flex-col-reverse gap-8 md:flex-row p-4 py-10 sm:p-10 lg:px-16">
+        <div className="w-full md:w-1/2 flex justify-center">
+          <div className="w-full md:w-3/4 lg:w-1/2 p-5 shadow shadow-neutral-500 reg-bg pb-16">
             <p className="text-lg text-neutral-400">Enter your credentials</p>
             <form className="flex flex-col items-start gap-6 mt-8" action="">
               <input type="text" className="w-full" placeholder="Name" />
@@ -25,9 +25,11 @@ const Registration = () => {
             </form>
           </div>
         </div>
-        <div className="w-1/2 flex justify-center items-center">
-          <div className="text-lg text-neutral-400">
-            <span className="font-bold text-white text-5xl">Register Now</span>
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <div className="md:text-lg text-neutral-400">
+            <span className="font-bold text-white text-3xl sm:text-4xl md:text-5xl">
+              Register Now
+            </span>
             <p className="mt-8">
               Join us at Procidence College of Engineering for an exclusive
               event designed to ignite your entrepreneurial journey :

@@ -3,12 +3,12 @@ import React from "react";
 const Info = () => {
   return (
     <section>
-      <div className="w-full flex justify-center p-4 sm:p-20 sm:px-10 lg:px-16 text-center">
+      <div className="w-full flex justify-center p-4 py-10 sm:p-20 sm:px-10 lg:px-16 text-center">
         <div className="flex flex-col items-center">
           <button className="bg-slate-950/70 text-neutral-100 p-2 px-5 rounded-2xl border border-neutral-500">
             Don't miss out!!!
           </button>
-          <h3 className="text-7xl mt-6 font-semibold">
+          <h3 className="text-5xl md:text-6xl lg:text-7xl mt-6 font-semibold">
             Ignite your <br /> Entrepeneurial Journey!!
           </h3>
           <p className="text-lg text-neutral-500 mt-4">
