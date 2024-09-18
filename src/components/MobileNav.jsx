@@ -8,9 +8,7 @@ import {
 import { cn } from "@/lib/utils";
 import { NavbarLinks } from "@/constants";
 
-const MobileNav = () => {
-  const pathname = window.location.pathname;
-
+const MobileNav = ({ activeSection }) => {
   return (
     <section className="sm:hidden">
       <div className="flex flex-col">
@@ -35,19 +33,11 @@ const MobileNav = () => {
             side={"left"}
             className="border-none outline-none p-0 bg-black/75"
           >
-            <div className="flex flex-col py-6">
-              <h1
-                className={`text-4xl font-aurora ml-4 mt-2 stroke-yellow mentra-font tracking-wide borderline text-white`}
-              >
-                Lumino
-              </h1>
-              <hr className="mx-5 mt-6 border border-black" />
-              <div className="flex flex-col h-max gap-2 px-3 pt-10">
+            <div className="flex flex-col items-start py-6">
+              <img src="/lumino.svg" className="h-16 w-auto ml-5" alt="" />
+              <hr className="mx-5 mt-6 border border-white w-full" />
+              <div className="flex flex-col w-full h-max gap-2 px-3 pt-10">
                 {NavbarLinks.map((obj, key) => {
-                  const isActive =
-                    pathname === obj.route ||
-                    (obj.route === "#home" && pathname === "/");
-                  console.log(pathname, isActive);
                   return (
                     <a
                       key={key}
@@ -60,7 +50,7 @@ const MobileNav = () => {
                             "w-full flex gap-3 items-center p-4 pr-10",
                             {
                               "bg-fuchsia-600/40 rounded-xl shadow-md":
-                                isActive,
+                                activeSection === obj.name,
                             }
                           )}
                         >
@@ -76,7 +66,7 @@ const MobileNav = () => {
                   href="https://www.ieeetechfutures2024/register"
                   className="p-2 flex justify-center bg-gray-600/20 text-white border border-neutral-200 font-semibold focus:outline:none focus:ring-0"
                 >
-                  Book Now
+                  Register Now
                 </a>
               </div>
             </div>

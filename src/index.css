@@ -12,3 +12,39 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.hero-bg {
+  background: url("./assets/bg/hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg {
+  background: url('./assets/bg/stars.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+@font-face {
+  font-family: 'ArialLocal';
+  src: url('/fonts/arial.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'Econo-Light';
+  src: url('/fonts/EconoSansReduced-45Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Econo-Bold';
+  src: url('/fonts/EconoSansReduced-95Black.ttf') format('truetype');
+}
+
+.arial-font {
+  font-family: 'ArialLocal', sans-serif;
+}
+.econo-light{
+  font-family: 'Econo-Light', sans-serif;
+}
+.econo-bold{
+  font-family: 'Econo-Bold', sans-serif;
+}
