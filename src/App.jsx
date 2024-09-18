@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Clubs from "./components/Pages/Clubs";
 import Hero from "./components/Pages/Hero";
@@ -6,13 +7,14 @@ import Registration from "./components/Pages/Registration";
 
 function App() {
   return (
-   <div className="bg-black text-white">
-   <Navbar/>
-   <Hero/>
-   <Info/>
-   <Registration/>
-   <Clubs/>
-   </div>
+    <div className="bg-black text-white">
+      <Navbar />
+      <Hero />
+      <Info />
+      <Registration />
+      <Clubs />
+      <Footer />
+    </div>
   );
 }
 

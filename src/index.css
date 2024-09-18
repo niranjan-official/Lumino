@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 input {
-  @apply bg-transparent py-2 border-b border-b-blue-400 focus:outline-none focus:ring-0
+  @apply bg-transparent py-2 border-b border-b-blue-400 focus:outline-none focus:ring-0;
 }
 
-.reg-bg{
-  background: url('./assets/bg/reg-bg.png');
+.reg-bg {
+  background: url("./assets/bg/reg-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

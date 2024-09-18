@@ -2,7 +2,7 @@ import React from "react";
 
 const Clubs = () => {
   return (
-    <div className="w-full flex flex-col items-center p-4 sm:px-10 lg:px-16">
+    <div className="w-full flex flex-col items-center p-4 sm:p-10 lg:px-16">
       <p className="text-2xl font-light text-neutral-300">
         Explore endless possibilities with
       </p>
