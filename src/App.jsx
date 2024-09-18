@@ -16,6 +16,7 @@ function App() {
         <Info />
         <Clubs />
         <Speakers />
+        <Phases/>
         <Registration />
       </div>
       <Footer />
