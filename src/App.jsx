@@ -1,3 +1,5 @@
+import BgParticles from "./components/BgParticles";
+import ClubMarquee from "./components/ClubMarquee";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Clubs from "./components/Pages/Clubs";
@@ -8,15 +10,14 @@ import Speakers from "./components/Pages/Speakers";
 
 function App() {
   return (
-    <div className="bg-black text-white main-bg">
+    <div className="w-full relative overflow-hidden bg-black text-white">
       <Navbar />
       <Hero />
-      <div className="fixed-bg">
-        <Info />
-        <Clubs />
-        <Speakers />
-        <Registration />
-      </div>
+      <Info />
+      <ClubMarquee />
+      <Speakers />
+      <Registration />
+      <Clubs />
       <Footer />
     </div>
   );

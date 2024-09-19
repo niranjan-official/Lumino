@@ -52,7 +52,7 @@ const Navbar = () => {
     }
   }, [activeSection]);
   return (
-    <div className={`w-full flex justify-between items-center px-4 sm:px-7 py-2 text-white select-none fixed z-50 ${!isHome && "bg-black"}`}>
+    <div className={`w-screen flex justify-between items-center px-4 sm:px-7 py-2 text-white select-none fixed z-50 ${!isHome && "bg-black"}`}>
       <div></div>
       <div className="flex items-center ml-10">
         <NavList activeSection={activeSection} />

@@ -14,14 +14,14 @@ input {
 }
 
 .hero-bg {
-  background: url("./assets/bg/hero-bg.png");
+  background: url("./assets/bg/star.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .fixed-bg {
-  background: url('./assets/bg/stars.jpg') no-repeat center center fixed;
+  background: url('./assets/bg/star.jpg') no-repeat center center fixed;
   background-size: cover;
   padding-top: 20px;
 }
@@ -47,4 +47,26 @@ input {
 }
 .econo-bold{
   font-family: 'Econo-Bold', sans-serif;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%; /* Start from outside the visible area */
+  animation: marquee 15s linear infinite; /* Duration and infinite loop */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
