@@ -17,7 +17,7 @@ const Info = () => {
             lumino is a bootcamp for aspiring entrepreneurs offering practical
             insights, <br /> essential skills and valuable networking oppertunities.
           </p>
-          <button className="bg-blue-500 text-white p-3 text-2xl shadow-md mt-8 font-semibold rounded-xl">
+          <button className="bg-blue-500 text-white p-3 md:text-2xl shadow-md mt-4 md:mt-8 font-bold md:font-semibold rounded-xl">
             Get Started Now
           </button>
         </div>

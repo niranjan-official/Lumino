@@ -43,6 +43,10 @@ input {
   font-family: 'Econo-Bold';
   src: url('/fonts/EconoSansReduced-95Black.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Aesthtic-Romance';
+  src: url('/fonts/Aesthetic_Romance.ttf') format('truetype');
+}
 
 .arial-font {
   font-family: 'ArialLocal', sans-serif;
@@ -52,6 +56,9 @@ input {
 }
 .econo-bold{
   font-family: 'Econo-Bold', sans-serif;
+}
+.phase-font{
+  font-family: 'Aesthtic-Romance', sans-serif;
 }
 
 .marquee {

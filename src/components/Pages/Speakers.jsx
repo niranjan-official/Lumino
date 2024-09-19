@@ -10,7 +10,7 @@ import {
 const Speakers = () => {
   return (
     <section>
-      <div className="w-full flex flex-col max-md:gap-6 md:flex-row p-4 py-10 sm:p-10 lg:px-16">
+      <div className="w-full flex flex-col max-md:gap-6 md:flex-row p-4 py-10 sm:p-10 lg:px-16 md:pt-20">
         <div className="w-full md:w-1/3 flex flex-col justify-center">
           <h5 className="text-4xl md:text-5xl font-semibold max-md:text-center econo-light">
             Meet our inspiring Speakers at Lumino!
