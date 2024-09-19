@@ -1,8 +1,10 @@
 import React from "react";
+import BgParticles from "../BgParticles";
 
 const Info = () => {
   return (
-    <section>
+    <section className="z-10">
+      <BgParticles />
       <div className="w-full flex justify-center p-4 py-10 sm:p-20 sm:px-10 lg:px-16 text-center">
         <div className="flex flex-col items-center">
           <button className="bg-slate-950/70 p-2 px-5 rounded-2xl border border-neutral-500">
