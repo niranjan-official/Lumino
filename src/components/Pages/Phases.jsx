@@ -16,7 +16,7 @@ const array = [
   {
     name: "DESIGN",
     phase: "03",
-    option: "COMMING SOON",
+    option: "COMING SOON",
     date: "To be Announced",
     active: false,
   },
@@ -30,7 +30,7 @@ const array = [
   {
     name: "DEVELOPMENT",
     phase: "02",
-    option: "COMMING SOON",
+    option: "COMING SOON",
     date: "To be Announced",
     active: false,
   },
@@ -80,11 +80,11 @@ const Phases = () => {
                   <p className="econo-bold tracking-wider">{obj.name}</p>
                 </CardContent>
                 <CardFooter className="flex flex-col justify-center items-center rounded-lg   pt-5 ">
-                  <p className="text-xs mb-2 arial-fonnt">{obj.date}</p>
+                  <p className=" mb-2 arial-fonnt">{obj.date}</p>
                   <Button
                     disabled={!obj?.active}
                     variant="outline"
-                    className="w-56 rounded-xl border-none bg-white/50 text-black hover:bg-white/30"
+                    className="w-56 rounded-xl border-none font-bold md:font-semibold bg-white/30 text-white hover:bg-white/30"
                   >
                     {obj.option}
                   </Button>

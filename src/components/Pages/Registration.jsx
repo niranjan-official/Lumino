@@ -36,7 +36,7 @@ const Registration = () => {
               <div className="w-full flex justify-end">
                 <button
                   type="submit"
-                  className="p-2 bg-green-500 px-5 font-extrabold text-lg"
+                  className="p-2 bg-green-600 rounded-[0.4rem] px-5 arial-font text-lg"
                 >
                   Register
                 </button>
