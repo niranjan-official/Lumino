@@ -12,7 +12,12 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.phase{
+  background: url("./assets/bg/phase2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .hero-bg {
   background: url("./assets/bg/star.jpg");
   background-position: center;
