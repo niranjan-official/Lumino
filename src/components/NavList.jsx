@@ -1,7 +1,7 @@
 // import FadeUp from "@/Animations/FadeUp";
 import { NavbarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const NavList = ({ activeSection }) => {
   return (
@@ -22,12 +22,24 @@ const NavList = ({ activeSection }) => {
         className={cn(
           "flex items-center gap-1 pb-1 transition-all duration-300 ",
           {
-            "font-semibold text-white": activeSection === "about",
+            "font-semibold text-white": activeSection === "info",
           }
         )}
       >
         {/* <FadeUp delay={key*0.1} > */}
-        <a href={"#about"}>ABOUT</a>
+        <a href={"#info"}>INFO</a>
+        {/* </FadeUp> */}
+      </div>
+      <div
+        className={cn(
+          "flex items-center gap-1 pb-1 transition-all duration-300 ",
+          {
+            "font-semibold text-white": activeSection === "speakers",
+          }
+        )}
+      >
+        {/* <FadeUp delay={key*0.1} > */}
+        <a href={"#speakers"}>SPEAKERS</a>
         {/* </FadeUp> */}
       </div>
       <img src="/lumino.svg" className="h-12 w-auto" alt="" />
@@ -35,12 +47,25 @@ const NavList = ({ activeSection }) => {
         className={cn(
           "flex items-center gap-1 pb-1 transition-all duration-300 ",
           {
-            "font-semibold text-white": activeSection === "contact",
+            "font-semibold text-white": activeSection === "phases",
           }
         )}
       >
         {/* <FadeUp delay={key*0.1} > */}
-        <a href={"#contact"}>CONTACT</a>
+        <a href={"#phases"}>PHASES</a>
+        {/* </FadeUp> */}
+      </div>
+      <div
+        className={cn(
+          "flex items-center gap-1 pb-1 transition-all duration-300 ",
+          {
+            "font-semibold text-white": activeSection === "events",
+          }
+        )}
+      >
+        {/* <FadeUp delay={key*0.1} > */}
+        <a href={"#events"}>EVENTS</a>
+        
         {/* </FadeUp> */}
       </div>
       <div

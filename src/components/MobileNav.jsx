@@ -49,12 +49,12 @@ const MobileNav = ({ activeSection }) => {
                           className={cn(
                             "w-full flex gap-3 items-center p-4 pr-10",
                             {
-                              "bg-fuchsia-600/40 rounded-xl shadow-md":
+                              "bg-blue-500/50 rounded-xl shadow-md":
                                 activeSection === obj.name,
                             }
                           )}
                         >
-                          <span className="text-lg font-aurora text-white">
+                          <span className="text-lg econo-bold tracking-widest text-white">
                             {obj.title}
                           </span>
                         </div>

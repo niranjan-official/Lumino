@@ -19,7 +19,7 @@ function useCarousel() {
   return context
 }
 
-const Carousel = React.forwardRef((
+const SpeakerCarousel = React.forwardRef((
   {
     orientation = "horizontal",
     opts,
@@ -112,7 +112,7 @@ const Carousel = React.forwardRef((
     </CarouselContext.Provider>)
   );
 })
-Carousel.displayName = "Carousel"
+SpeakerCarousel.displayName = "Carousel"
 
 const CarouselContent = React.forwardRef(({ className, ...props }, ref) => {
   const { carouselRef, orientation } = useCarousel()
@@ -192,4 +192,4 @@ const CarouselNext = React.forwardRef(({ className, variant = "outline", size = 
 })
 CarouselNext.displayName = "CarouselNext"
 
-export { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext };
+export { SpeakerCarousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext };

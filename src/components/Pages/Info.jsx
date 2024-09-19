@@ -3,7 +3,7 @@ import BgParticles from "../BgParticles";
 
 const Info = () => {
   return (
-    <section className="z-10">
+    <section id="info">
       <BgParticles />
       <div className="w-full flex justify-center p-4 py-10 sm:p-20 sm:px-10 lg:px-16 text-center">
         <div className="flex flex-col items-center">

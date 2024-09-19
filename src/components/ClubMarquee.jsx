@@ -8,43 +8,43 @@ const ClubMarquee = () => {
         <Marquee speed={120}>
           <div className="w-full flex items-center gap-5 md:gap-10">
             <img
-              src="/clubs/ieeesbprc.svg"
+              src="/clubs/ieee-sb.png"
               className="h-8 sm:h-10 md:h-12 w-auto ml-10"
               alt=""
             />
             <GiDiamonds size={25} className="text-white" />
             <img
-              src="/clubs/mulearn.svg"
+              src="/clubs/mulearn.png"
               className="h-8 sm:h-10 md:h-12 w-auto"
               alt=""
             />
             <GiDiamonds size={25} />
             <img
-              src="/clubs/ipl.svg"
+              src="/clubs/ipl.png"
               className="h-8 sm:h-10 md:h-12 w-auto"
               alt=""
             />
             <GiDiamonds size={25} />
             <img
-              src="/clubs/iedc_prc.svg"
+              src="/clubs/iedc.png"
               className="h-8 sm:h-10 md:h-12 w-auto"
               alt=""
             />
             <GiDiamonds size={25} />
             <img
-              src="/clubs/ksm.svg"
+              src="/clubs/ksm.png"
               className="h-8 sm:h-10 md:h-12 w-auto"
               alt=""
             />
             <GiDiamonds size={25} />
             <img
-              src="/clubs/ieee.svg"
+              src="/clubs/ieee.png"
               className="h-8 sm:h-10 md:h-12 w-auto"
               alt=""
             />
             <GiDiamonds size={25} />
             <img
-              src="/clubs/gdsc.svg"
+              src="/clubs/gdsc.png"
               className="h-8 sm:h-10 md:h-12 w-auto"
               alt=""
             />

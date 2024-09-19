@@ -14,7 +14,7 @@ import {
 
 const array = [
   {
-    name: "DESIGN",
+    name: "DEVELOPMENT",
     phase: "03",
     option: "COMING SOON",
     date: "To be Announced",
@@ -28,7 +28,7 @@ const array = [
     active: true,
   },
   {
-    name: "DEVELOPMENT",
+    name: "DESIGN",
     phase: "02",
     option: "COMING SOON",
     date: "To be Announced",
@@ -55,11 +55,14 @@ const Phases = () => {
     : array;
 
   return (
-    <section>
+    <section id="phases">
       <div className="w-full flex flex-col items-center p-6 py-10 sm:p-20 sm:px-10 lg:px-16">
-        <h1 className=" text-4xl econo-light font-semibold">Phases of Lumino</h1>
+        <h1 className=" text-4xl econo-light font-semibold">
+          Phases of Lumino
+        </h1>
         <p className="mt-4 econo-light text-neutral-300 md:text-lg text-center">
-        Here are the three phases of the bootcamp designed for startup success.
+          Here are the three phases of the bootcamp designed for startup
+          success.
         </p>
         <div className="flex flex-col max-md:gap-5 md:flex-row mt-4 md:mt-10">
           {sortedArray.map((obj, index) => (

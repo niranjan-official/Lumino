@@ -5,14 +5,9 @@ export const NavbarLinks = [
     route: "#home",
   },
   {
-    title: "About",
-    name: "about",
-    route: "#about",
-  },
-  {
-    title: "Schedule",
-    name: "schedule",
-    route: "#schedule",
+    title: "Info",
+    name: "info",
+    route: "#info",
   },
   {
     title: "Speakers",
@@ -20,52 +15,32 @@ export const NavbarLinks = [
     route: "#speakers",
   },
   {
-    title: "Contact",
-    name: "contact",
-    route: "#contact",
+    title: "Phases",
+    name: "phases",
+    route: "#speakers",
+  },
+  {
+    title: "Events",
+    name: "events",
+    route: "#events",
+  },
+  {
+    title: "Register",
+    name: "registration",
+    route: "#registration",
   },
 ];
-export const events = [
+export const PreEvents = [
   {
-    title: "Registration",
-    description: "Registration and Welcome Breakfast",
-    time: "9:00",
-    period: "AM",
+    id: 1,
+    url: "/posters/pre-event-1.jpg"
   },
   {
-    title: "Opening Keynote",
-    description: "The future of AI - by Dr. Ayesha Khan",
-    time: "10:00",
-    period: "AM",
+    id: 2,
+    url: "/posters/pre-event-2.jpg"
   },
   {
-    title: "Panel Discussion",
-    description: "Sustainable Technology for the future",
-    time: "11:00",
-    period: "AM",
-  },
-  {
-    title: "Workshop",
-    description: "Building with Blockchain - by Rajesh Menon",
-    time: "01:00",
-    period: "PM",
-  },
-  {
-    title: "Tech Talk",
-    description: "Cybersecurity Trends - by Neha Gupta",
-    time: "3:00",
-    period: "PM",
-  },
-  {
-    title: "Interactive Session",
-    description: "Innovative IoT Solutions - by Anil Kumar",
-    time: "4:00",
-    period: "PM",
-  },
-  {
-    title: "Conclusion",
-    description: "Closing Remark and Award Ceremony",
-    time: "5:30",
-    period: "PM",
+    id: 3,
+    url: "/posters/pre-event-3.jpg"
   },
 ];

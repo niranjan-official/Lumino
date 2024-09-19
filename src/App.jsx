@@ -3,6 +3,7 @@ import ClubMarquee from "./components/ClubMarquee";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Clubs from "./components/Pages/Clubs";
+import Events from "./components/Pages/Events";
 import Hero from "./components/Pages/Hero";
 import Info from "./components/Pages/Info";
 import Phases from "./components/Pages/Phases";
@@ -18,6 +19,7 @@ function App() {
       <ClubMarquee />
       <Speakers />
       <Phases/>
+      <Events/>
       <Registration />
       <Clubs />
       <Footer />
