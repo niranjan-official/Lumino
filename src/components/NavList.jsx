@@ -65,12 +65,12 @@ const NavList = ({ activeSection }) => {
       >
         {/* <FadeUp delay={key*0.1} > */}
         <a href={"#events"}>EVENTS</a>
-        
+
         {/* </FadeUp> */}
       </div>
       <div
         className={cn(
-          "p-1 px-6 transition-all duration-300rounded-3xl border border-blue-400/70 ",
+          "p-1 px-6 transition-all duration-300 rounded-3xl border border-blue-400/70 ",
           {
             "font-semibold text-white": activeSection === "registration",
           }

@@ -6,7 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/SpeakerCarousel";
-import UnderLine from "../UnderLine"
+import UnderLine from "../UnderLine";
 
 const Speakers = () => {
   return (
@@ -17,7 +17,7 @@ const Speakers = () => {
             Meet our inspiring <br className="max-md:hidden" /> Speakers at
             Lumino!
           </h5>
-          <UnderLine/>
+          <UnderLine />
           <p className="text-neutral-300 md:text-lg mt-6 max-md:text-center econo-light">
             Thses industry experts and entrepeneurial leaders will share
             valuable <br className="max-md:hidden" /> insights practical
@@ -35,22 +35,30 @@ const Speakers = () => {
             <CarouselContent>
               <CarouselItem className="md:basis-1/3">
                 <div className="w-full h-64 flex justify-center items-center bg-slate-950/50 border border-white rounded-3xl">
-                  <p className="text-center phase-font text-5xl leading-8">Coming <br /> Soon</p>
+                  <p className="text-center phase-font text-5xl leading-8">
+                    Coming <br /> Soon
+                  </p>
                 </div>
               </CarouselItem>
               <CarouselItem className="md:basis-1/3">
                 <div className="w-full h-64 flex justify-center items-center bg-slate-950/50 border border-white rounded-3xl">
-                  <p className="text-center phase-font text-5xl leading-8">Coming <br /> Soon</p>
+                  <p className="text-center phase-font text-5xl leading-8">
+                    Coming <br /> Soon
+                  </p>
                 </div>
               </CarouselItem>
               <CarouselItem className="md:basis-1/3">
                 <div className="w-full h-64 flex justify-center items-center bg-slate-950/50 border border-white rounded-3xl">
-                  <p className="text-center phase-font text-5xl leading-8">Coming <br /> Soon</p>
+                  <p className="text-center phase-font text-5xl leading-8">
+                    Coming <br /> Soon
+                  </p>
                 </div>
               </CarouselItem>
               <CarouselItem className="md:basis-1/3">
                 <div className="w-full h-64 flex justify-center items-center bg-slate-950/50 border border-white rounded-3xl">
-                  <p className="text-center phase-font text-5xl leading-8">Coming <br /> Soon</p>
+                  <p className="text-center phase-font text-5xl leading-8">
+                    Coming <br /> Soon
+                  </p>
                 </div>
               </CarouselItem>
             </CarouselContent>

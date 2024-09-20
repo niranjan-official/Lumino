@@ -13,9 +13,10 @@ const Info = () => {
           <h3 className={`text-4xl md:text-6xl lg:text-7xl mt-6 arial-font`}>
             Ignite your <br /> Entrepeneurial Journey!!
           </h3>
-          <p className="sm:text-lg text-neutral-300 mt-4 econo-light" >
+          <p className="sm:text-lg text-neutral-300 mt-4 econo-light">
             lumino is a bootcamp for aspiring entrepreneurs offering practical
-            insights, <br /> essential skills and valuable networking oppertunities.
+            insights, <br /> essential skills and valuable networking
+            oppertunities.
           </p>
           <button className="bg-blue-500 text-white p-3 md:text-2xl shadow-md mt-4 md:mt-8 font-bold md:font-semibold rounded-xl">
             Get Started Now

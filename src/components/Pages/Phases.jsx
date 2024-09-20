@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import UnderLine from "../UnderLine"
+import UnderLine from "../UnderLine";
 
 const array = [
   {
@@ -57,7 +57,7 @@ const Phases = () => {
         <h1 className="text-4xl md:text-5xl econo-light font-semibold">
           Phases of Lumino
         </h1>
-        <UnderLine/>
+        <UnderLine />
         <p className="mt-4 econo-light text-neutral-300 md:text-lg text-center">
           Here are the three phases of the bootcamp designed for startup
           success.

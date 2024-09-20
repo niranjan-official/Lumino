@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/EventCarousel";
 import { PreEvents } from "../../constants";
-import UnderLine from "../UnderLine"
+import UnderLine from "../UnderLine";
 
 const Events = () => {
   const [isActive, setIsActive] = useState("pre");
@@ -18,7 +18,7 @@ const Events = () => {
         <h5 className="text-4xl md:text-5xl font-semibold max-md:text-center econo-light">
           Events at Lumino
         </h5>
-        <UnderLine/>
+        <UnderLine />
         <p className="mt-4 econo-light text-neutral-300 md:text-lg text-center">
           Explore our lineup of events designed to inspire, educate, and connect
           future innovators.
