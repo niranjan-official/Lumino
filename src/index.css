@@ -28,13 +28,6 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.poster-bg {
-  /* background: url("./assets/bg/poster-bg.png"); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgb(19, 17, 17);
-}
 
 @font-face {
   font-family: 'ArialLocal';
@@ -74,3 +67,10 @@ input {
     transform: translateX(-100%);
   }
 }
+
+/* @media screen and (max-width: 640px){
+  .hero-bg {
+    background: url("./assets/bg/hero-bg.jpg");
+    background-position: left;
+  }
+} */

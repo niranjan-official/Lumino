@@ -1,16 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
 import { Button } from "@/components/ui/button";
-
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
+import UnderLine from "../UnderLine"
 
 const array = [
   {
@@ -57,9 +54,10 @@ const Phases = () => {
   return (
     <section id="phases">
       <div className="w-full flex flex-col items-center p-6 py-10 sm:p-20 sm:px-10 lg:px-16">
-        <h1 className=" text-4xl econo-light font-semibold">
+        <h1 className="text-4xl md:text-5xl econo-light font-semibold">
           Phases of Lumino
         </h1>
+        <UnderLine/>
         <p className="mt-4 econo-light text-neutral-300 md:text-lg text-center">
           Here are the three phases of the bootcamp designed for startup
           success.

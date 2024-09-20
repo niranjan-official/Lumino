@@ -5,8 +5,8 @@ const Registration = () => {
     <section id="registration">
       <div className="w-full flex flex-col gap-8 md:flex-row p-4 py-10 sm:p-10 lg:px-16">
         <div className="w-full md:w-1/2 flex justify-center items-center ">
-          <div className="md:text-lg text-neutral-300 econo-light max-md:text-center">
-            <span className="font-bold text-white text-3xl sm:text-4xl md:text-5xl">
+          <div className="flex flex-col max-md:items-center md:text-lg text-neutral-300 econo-light max-md:text-center">
+            <span className="font-bold text-white text-4xl md:text-5xl">
               Register Now
             </span>
             <p className="mt-4 md:mt-8">

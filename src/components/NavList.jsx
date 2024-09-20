@@ -70,7 +70,7 @@ const NavList = ({ activeSection }) => {
       </div>
       <div
         className={cn(
-          "p-1 px-6 transition-all duration-300 rounded-3xl border border-blue-400/70",
+          "p-1 px-6 transition-all duration-300rounded-3xl border border-blue-400/70 ",
           {
             "font-semibold text-white": activeSection === "registration",
           }

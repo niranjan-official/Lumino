@@ -31,12 +31,12 @@ const MobileNav = ({ activeSection }) => {
           </SheetTrigger>
           <SheetContent
             side={"left"}
-            className="border-none outline-none p-0 bg-black/75"
+            className="border-none outline-none p-0 bg-zinc-950/85"
           >
             <div className="flex flex-col items-start py-6">
               <img src="/lumino.svg" className="h-16 w-auto ml-5" alt="" />
-              <hr className="mx-5 mt-6 border border-white w-full" />
-              <div className="flex flex-col w-full h-max gap-2 px-3 pt-10">
+              <hr className="ml-4 mt-6 w-[calc(100%-2rem)]" />
+              <div className="flex flex-col w-full h-max gap-2 px-3 mt-6">
                 {NavbarLinks.map((obj, key) => {
                   return (
                     <a
@@ -49,12 +49,12 @@ const MobileNav = ({ activeSection }) => {
                           className={cn(
                             "w-full flex gap-3 items-center p-4 pr-10",
                             {
-                              "bg-blue-500/50 rounded-xl shadow-md":
+                              "bg-blue-600/20 rounded-xl shadow-md":
                                 activeSection === obj.name,
                             }
                           )}
                         >
-                          <span className="text-lg econo-bold tracking-widest text-white">
+                          <span className="text-lg econo-light tracking-widest uppercase text-white">
                             {obj.title}
                           </span>
                         </div>
@@ -64,7 +64,7 @@ const MobileNav = ({ activeSection }) => {
                 })}
                 <a
                   href="https://www.ieeetechfutures2024/register"
-                  className="p-2 flex justify-center bg-gray-600/20 text-white border border-neutral-200 font-semibold focus:outline:none focus:ring-0"
+                  className="p-2 flex justify-center text-white border border-blue-400/70 focus:outline:none focus:ring-0"
                 >
                   Register Now
                 </a>

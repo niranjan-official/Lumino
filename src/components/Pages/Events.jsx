@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import {
   EventCarousel,
   CarouselContent,
@@ -8,20 +8,22 @@ import {
   CarouselPrevious,
 } from "@/components/ui/EventCarousel";
 import { PreEvents } from "../../constants";
+import UnderLine from "../UnderLine"
 
 const Events = () => {
   const [isActive, setIsActive] = useState("pre");
   return (
     <section id="events">
-      <div className="w-full poster-bg bg-stone-800/50 flex flex-col items-center p-4 py-10 sm:p-10 lg:px-16">
+      <div className="w-full bg-zinc-900/70 flex flex-col items-center p-4 py-10 sm:p-10 lg:px-16">
         <h5 className="text-4xl md:text-5xl font-semibold max-md:text-center econo-light">
           Events at Lumino
         </h5>
+        <UnderLine/>
         <p className="mt-4 econo-light text-neutral-300 md:text-lg text-center">
           Explore our lineup of events designed to inspire, educate, and connect
           future innovators.
         </p>
-        <div className="flex rounded-[0.5rem] overflow-hidden shadow-inner mt-4 md:mt-8 shadow-black bg-zinc-800">
+        <div className="z-50 flex rounded-[0.5rem] overflow-hidden shadow-inner mt-4  shadow-black bg-zinc-800">
           <button
             onClick={() => setIsActive("pre")}
             className={`p-2 px-6 md:px-16 tracking-wider arial-font ${
