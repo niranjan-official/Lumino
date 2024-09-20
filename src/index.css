@@ -2,12 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
-}
-
-input {
-  @apply bg-transparent py-2 border-b border-b-blue-400 focus:outline-none focus:ring-0;
 }
 
 .reg-bg {
@@ -16,7 +12,7 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.phase{
+.phase {
   background: url("./assets/bg/phase-card.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -30,33 +26,33 @@ input {
 }
 
 @font-face {
-  font-family: 'ArialLocal';
-  src: url('/fonts/arial.TTF') format('truetype');
+  font-family: "ArialLocal";
+  src: url("/fonts/arial.TTF") format("truetype");
 }
 @font-face {
-  font-family: 'Econo-Light';
-  src: url('/fonts/EconoSansReduced-45Light.ttf') format('truetype');
+  font-family: "Econo-Light";
+  src: url("/fonts/EconoSansReduced-45Light.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Econo-Bold';
-  src: url('/fonts/EconoSansReduced-95Black.ttf') format('truetype');
+  font-family: "Econo-Bold";
+  src: url("/fonts/EconoSansReduced-95Black.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Aesthtic-Romance';
-  src: url('/fonts/Aesthetic_Romance.ttf') format('truetype');
+  font-family: "Aesthtic-Romance";
+  src: url("/fonts/Aesthetic_Romance.ttf") format("truetype");
 }
 
 .arial-font {
-  font-family: 'ArialLocal', sans-serif;
+  font-family: "ArialLocal", sans-serif;
 }
-.econo-light{
-  font-family: 'Econo-Light', sans-serif;
+.econo-light {
+  font-family: "Econo-Light", sans-serif;
 }
-.econo-bold{
-  font-family: 'Econo-Bold', sans-serif;
+.econo-bold {
+  font-family: "Econo-Bold", sans-serif;
 }
-.phase-font{
-  font-family: 'Aesthtic-Romance', sans-serif;
+.phase-font {
+  font-family: "Aesthtic-Romance", sans-serif;
 }
 
 @keyframes marquee {
