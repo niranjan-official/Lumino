@@ -20,7 +20,7 @@ const Hero = () => {
           />
         </div>
         <div className="w-full h-full flex flex-col justify-center items-center">
-          <img src="/lumino.svg" className="w-full sm:w-1/2 h-auto" alt="" />
+          <img src="/lumino.png" className="w-full sm:w-1/2 h-auto" alt="" />
           <p className="md:w-1/2 md:text-xl text-center mt-2 econo-light text-neutral-200">
             Idea to impact: Master communication, design, and development for
             startup success.
