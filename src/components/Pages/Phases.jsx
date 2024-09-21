@@ -53,39 +53,39 @@ const Phases = () => {
 
   return (
     <section id="phases">
-      <div className="w-full flex flex-col items-center p-6 py-10 sm:p-20 sm:px-10 lg:px-16">
-        <h1 className="text-4xl md:text-5xl econo-light font-semibold">
+      <div className="flex w-full flex-col items-center p-6 py-10 sm:p-20 sm:px-10 lg:px-16">
+        <h1 className="econo-light text-4xl font-semibold md:text-5xl">
           Phases of Lumino
         </h1>
         <UnderLine />
-        <p className="mt-4 econo-light text-neutral-300 md:text-lg text-center">
+        <p className="econo-light mt-4 text-center text-neutral-300 md:text-lg">
           Here are the three phases of the bootcamp designed for startup
           success.
         </p>
-        <div className="flex flex-col max-md:gap-5 md:flex-row mt-4 md:mt-10">
+        <div className="mt-4 flex flex-col max-md:gap-5 md:mt-10 md:flex-row">
           {sortedArray.map((obj, index) => (
             <div
               key={index}
-              className="md:basis-1/2 lg:basis-1/3 px-3 flex  flex-col"
+              className="flex flex-col px-3 md:basis-1/2 lg:basis-1/3"
             >
               <Card
-                className={`flex flex-col justify-center items-center phase border-none transform transition-transform duration-300 ${
+                className={`phase flex transform flex-col items-center justify-center border-none transition-transform duration-300 ${
                   obj.active && "md:scale-110"
                 }`}
               >
-                <CardHeader className=" flex flex-col justify-center items-center text-5xl py-12">
+                <CardHeader className="flex flex-col items-center justify-center py-12 text-5xl">
                   <h4 className="phase-font text-6xl">PHASE</h4>
-                  <span className="text-6xl phase-font">{obj.phase}</span>
+                  <span className="phase-font text-6xl">{obj.phase}</span>
                 </CardHeader>
-                <CardContent className="text-2xl py-3">
+                <CardContent className="py-3 text-2xl">
                   <p className="econo-bold tracking-wider">{obj.name}</p>
                 </CardContent>
-                <CardFooter className="flex flex-col justify-center items-center rounded-lg   pt-5 ">
-                  <p className=" mb-2 arial-fonnt">{obj.date}</p>
+                <CardFooter className="flex flex-col items-center justify-center rounded-lg pt-5">
+                  <p className="arial-fonnt mb-2">{obj.date}</p>
                   <Button
                     disabled={!obj?.active}
                     variant="outline"
-                    className="w-56 rounded-xl border-none font-bold md:font-semibold bg-white/30 text-white hover:bg-white/30"
+                    className="w-56 rounded-xl border-none bg-white/30 font-bold text-white hover:bg-white/30 md:font-semibold"
                   >
                     {obj.option}
                   </Button>

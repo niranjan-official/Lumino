@@ -5,13 +5,13 @@ import React from "react";
 
 const NavList = ({ activeSection }) => {
   return (
-    <div className="flex items-center gap-8 lg:gap-16 max-sm:hidden text-xl lg:text-2xl text-neutral-300 econo-light">
+    <div className="econo-light flex items-center gap-8 text-xl text-neutral-300 max-sm:hidden lg:gap-16 lg:text-2xl">
       <div
         className={cn(
-          "flex items-center gap-1 pb-1 transition-all duration-300 ",
+          "flex items-center gap-1 pb-1 transition-all duration-300",
           {
             "font-semibold text-white": activeSection === "home",
-          }
+          },
         )}
       >
         {/* <FadeUp delay={key*0.1} > */}
@@ -20,10 +20,10 @@ const NavList = ({ activeSection }) => {
       </div>
       <div
         className={cn(
-          "flex items-center gap-1 pb-1 transition-all duration-300 ",
+          "flex items-center gap-1 pb-1 transition-all duration-300",
           {
             "font-semibold text-white": activeSection === "info",
-          }
+          },
         )}
       >
         {/* <FadeUp delay={key*0.1} > */}
@@ -32,10 +32,10 @@ const NavList = ({ activeSection }) => {
       </div>
       <div
         className={cn(
-          "flex items-center gap-1 pb-1 transition-all duration-300 ",
+          "flex items-center gap-1 pb-1 transition-all duration-300",
           {
             "font-semibold text-white": activeSection === "speakers",
-          }
+          },
         )}
       >
         {/* <FadeUp delay={key*0.1} > */}
@@ -45,10 +45,10 @@ const NavList = ({ activeSection }) => {
       <img src="/lumino.svg" className="h-12 w-auto" alt="" />
       <div
         className={cn(
-          "flex items-center gap-1 pb-1 transition-all duration-300 ",
+          "flex items-center gap-1 pb-1 transition-all duration-300",
           {
             "font-semibold text-white": activeSection === "phases",
-          }
+          },
         )}
       >
         {/* <FadeUp delay={key*0.1} > */}
@@ -57,10 +57,10 @@ const NavList = ({ activeSection }) => {
       </div>
       <div
         className={cn(
-          "flex items-center gap-1 pb-1 transition-all duration-300 ",
+          "flex items-center gap-1 pb-1 transition-all duration-300",
           {
             "font-semibold text-white": activeSection === "events",
-          }
+          },
         )}
       >
         {/* <FadeUp delay={key*0.1} > */}
@@ -70,10 +70,10 @@ const NavList = ({ activeSection }) => {
       </div>
       <div
         className={cn(
-          "p-1 px-6 transition-all duration-300 rounded-3xl border border-blue-400/70 ",
+          "rounded-3xl border border-blue-400/70 p-1 px-6 transition-all duration-300",
           {
             "font-semibold text-white": activeSection === "registration",
-          }
+          },
         )}
       >
         {/* <FadeUp delay={key*0.1} > */}

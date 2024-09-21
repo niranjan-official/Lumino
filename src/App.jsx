@@ -12,14 +12,14 @@ import Speakers from "./components/Pages/Speakers";
 
 function App() {
   return (
-    <div className="w-full relative overflow-hidden bg-black text-white">
+    <div className="relative w-full overflow-hidden bg-black text-white">
       <Navbar />
       <Hero />
       <Info />
       <ClubMarquee />
       <Speakers />
-      <Phases/>
-      <Events/>
+      <Phases />
+      <Events />
       <Registration />
       <Clubs />
       <Footer />

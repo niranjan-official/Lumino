@@ -18,20 +18,16 @@ const Navbar = () => {
         const windowHeight = window.innerHeight;
         const windowBottom = scrollPosition + windowHeight;
 
-        // Calculate the visible portion of the section
         const visibleHeight =
           Math.min(windowBottom, sectionTop + sectionHeight) -
           Math.max(scrollPosition, sectionTop);
 
-        // Calculate the percentage of section visibility
         const visibilityPercentage = (visibleHeight / sectionHeight) * 100;
 
-        // Set a threshold for visibility percentage (adjust as needed)
-        const visibilityThreshold = 50; // At least 50% visible
+        const visibilityThreshold = 50;
 
         if (visibilityPercentage >= visibilityThreshold) {
           setActiveSection(section.id);
-          console.log("Section changed");
         }
       });
     };
@@ -50,13 +46,22 @@ const Navbar = () => {
       setIsHome(false);
     }
   }, [activeSection]);
+
   return (
-    <div className={`w-screen flex justify-between items-center px-4 sm:px-7 py-2 text-white select-none fixed z-50 ${!isHome && "bg-black"}`}>
-      <div></div>
-      <div className="flex items-center ml-10">
+    <div
+      className={`fixed z-50 flex w-screen select-none items-center justify-center px-4 py-2 text-white sm:px-7 ${!isHome && "sm:bg-black"}`}
+    >
+      <div className="flex items-center md:ml-10">
         <NavList activeSection={activeSection} />
       </div>
-      <div className="flex gap-3 items-center">
+      <div
+        className={`hidden w-full items-center justify-between gap-3 rounded-3xl border border-neutral-500/70 transition-all duration-300 ease-in-out ${
+          !isHome
+            ? "bg-neutral-800/20 backdrop-blur-lg"
+            : "mt-4 bg-white/5 backdrop-blur-sm"
+        } p-3 max-sm:flex`}
+      >
+        <img src="/lumino.svg" className={`h-8 w-auto`} alt="" />
         <MobileNav activeSection={activeSection} />
       </div>
     </div>

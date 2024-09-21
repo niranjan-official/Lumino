@@ -7,11 +7,13 @@ import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="w-full flex flex-col bg-black p-8 gap-8">
-      <div className="flex flex-col md:flex-row justify-between items-center text-neutral-400">
-        <div className="flex flex-col md:flex-row gap-6 items-center">
+    <div className="flex w-full flex-col gap-8 bg-black p-8">
+      <div className="flex flex-col items-center justify-between text-neutral-400 md:flex-row">
+        <div className="flex flex-col items-center gap-6 md:flex-row">
           <img src="/lumino.svg" className="h-16 w-auto" alt="" />
-          <span className="hidden md:block text-2xl font-light text-blue-300/70">|</span>
+          <span className="hidden text-2xl font-light text-blue-300/70 md:block">
+            |
+          </span>
           <p>Igninte your entrepreneurial spark</p>
         </div>
         <div className="flex gap-5">
@@ -21,7 +23,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-full border-[0.6px] border-blue-300/70" />
-      <div className="flex w-full text-white justify-center md:justify-end">
+      <div className="flex w-full justify-center text-white md:justify-end">
         <div className="flex items-center gap-3">
           <FaInstagram size={25} />
           <FaFacebookF size={25} />

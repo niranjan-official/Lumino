@@ -81,7 +81,7 @@ const BgParticles = () => {
       },
       detectRetina: true,
     }),
-    []
+    [],
   );
 
   return (

@@ -17,7 +17,7 @@ export const NavbarLinks = [
   {
     title: "Phases",
     name: "phases",
-    route: "#speakers",
+    route: "#phases",
   },
   {
     title: "Events",
