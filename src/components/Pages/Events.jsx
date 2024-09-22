@@ -23,7 +23,7 @@ const Events = () => {
           Explore our lineup of events designed to inspire, educate, and connect
           future innovators.
         </p>
-        <div className="z-40 mt-4 flex overflow-hidden rounded-[0.5rem] bg-zinc-800 shadow-inner shadow-black">
+        <div className="z-40 mt-4 flex overflow-hidden rounded-[0.6rem] bg-zinc-800 shadow-inner shadow-black">
           <button
             onClick={() => setIsActive("pre")}
             className={`arial-font p-2 px-6 tracking-wider md:px-16 ${
@@ -64,7 +64,7 @@ const Events = () => {
                         alt=""
                       />
                     </Card>
-                    <button className="arial-font rounded-[0.4rem] bg-white p-2 tracking-wider text-black shadow-md shadow-neutral-700">
+                    <button className="arial-font rounded-[0.6rem] bg-white p-2 tracking-wider text-black shadow-md shadow-neutral-700">
                       REGISTER NOW
                     </button>
                   </div>

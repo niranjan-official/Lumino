@@ -85,7 +85,7 @@ const Phases = () => {
                   <Button
                     disabled={!obj?.active}
                     variant="outline"
-                    className="w-56 rounded-xl border-none bg-white/30 font-bold text-white hover:bg-white/30 md:font-semibold"
+                    className="w-56 rounded-[0.6rem] border-none bg-white/30 font-bold text-white hover:bg-white/30 md:font-semibold"
                   >
                     {obj.option}
                   </Button>

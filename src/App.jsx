@@ -2,6 +2,7 @@ import BgParticles from "./components/BgParticles";
 import ClubMarquee from "./components/ClubMarquee";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import About from "./components/Pages/About";
 import Clubs from "./components/Pages/Clubs";
 import Events from "./components/Pages/Events";
 import Hero from "./components/Pages/Hero";
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Hero />
       <Info />
+      {/* <About/> */}
       <ClubMarquee />
       <Speakers />
       <Phases />

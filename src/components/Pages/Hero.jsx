@@ -1,5 +1,6 @@
 import React from "react";
 import { Spotlight } from "../ui/Spotlight";
+import { IoIosPaperPlane } from "react-icons/io";
 
 const Hero = () => {
   return (
@@ -25,8 +26,8 @@ const Hero = () => {
             Idea to impact: Master communication, design, and development for
             startup success.
           </p>
-          <button className="duration-400 mt-4 transform rounded-[0.6rem] border border-white bg-transparent px-6 py-2 font-bold text-white shadow-[0_0_0_3px_#000000_inset] transition hover:-translate-y-1">
-            Register Now
+          <button className="flex gap-2 items-center duration-400 mt-4 transform rounded-[0.6rem] border border-white bg-transparent px-4 py-2 font-bold text-white shadow-[0_0_0_3px_#000000_inset] transition hover:-translate-y-1">
+            Register Now <IoIosPaperPlane size={20} />
           </button>
         </div>
       </div>

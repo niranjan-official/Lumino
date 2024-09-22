@@ -4,7 +4,7 @@ import { GiDiamonds } from "react-icons/gi";
 
 const ClubMarquee = () => {
   return (
-    <div className="w-full bg-black/60 py-5">
+    <div className="w-full bg-black/60 py-5 my-5">
       <Marquee speed={120}>
         <div className="flex w-full items-center gap-5 md:gap-10">
           <img

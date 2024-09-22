@@ -11,7 +11,7 @@ import UnderLine from "../UnderLine";
 const Speakers = () => {
   return (
     <section id="speakers">
-      <div className="mt-8 flex w-full flex-col items-center bg-zinc-900/70 p-4 py-10 max-md:gap-6 sm:p-10 lg:px-16">
+      <div className="flex w-full flex-col items-center bg-zinc-900/70 p-4 py-10 max-md:gap-6 sm:p-10 lg:px-16">
         <div className="flex flex-col items-center justify-center text-center">
           <h5 className="econo-light text-4xl font-semibold max-md:text-center md:text-5xl">
             Meet our inspiring <br className="max-md:hidden" /> Speakers at

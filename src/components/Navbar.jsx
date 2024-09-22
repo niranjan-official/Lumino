@@ -51,7 +51,7 @@ const Navbar = () => {
     <div
       className={`fixed z-50 flex w-screen select-none items-center justify-center px-4 py-2 text-white sm:px-7 ${!isHome && "sm:bg-black"}`}
     >
-      <div className="flex items-center md:ml-10">
+      <div className="flex items-center md:ml-10 ">
         <NavList activeSection={activeSection} />
       </div>
       <div
