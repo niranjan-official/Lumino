@@ -62,12 +62,14 @@ const MobileNav = ({ activeSection }) => {
                     </a>
                   );
                 })}
-                <a
-                  href="https://www.ieeetechfutures2024/register"
-                  className="focus:outline:none flex justify-center border border-blue-400/70 p-2 text-white focus:ring-0"
-                >
-                  Register Now
-                </a>
+                <SheetClose>
+                  <a
+                    href="#registration"
+                    className="focus:outline:none flex justify-center border border-blue-400/70 p-2 text-white focus:ring-0"
+                  >
+                    Register Now
+                  </a>
+                </SheetClose>
               </div>
             </div>
           </SheetContent>

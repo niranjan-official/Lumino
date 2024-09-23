@@ -59,12 +59,12 @@ const Events = () => {
                   <div className="flex flex-col items-center gap-4 p-1">
                     <Card className="w-full border-0">
                       <img
-                        src={event.url}
+                        src={event.image}
                         className="h-auto w-full shadow-md shadow-neutral-700"
                         alt=""
                       />
                     </Card>
-                    <button className="arial-font rounded-[0.6rem] bg-white p-2 tracking-wider text-black shadow-md shadow-neutral-700">
+                    <button onClick={()=>{ window.location.href = event.url }} className="arial-font rounded-[0.6rem] bg-white p-2 tracking-wider text-black shadow-md shadow-neutral-700">
                       REGISTER NOW
                     </button>
                   </div>

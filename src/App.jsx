@@ -1,5 +1,6 @@
 import BgParticles from "./components/BgParticles";
 import ClubMarquee from "./components/ClubMarquee";
+import Counter from "./components/Counter";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import About from "./components/Pages/About";
@@ -17,8 +18,8 @@ function App() {
       <Navbar />
       <Hero />
       <Info />
-      {/* <About/> */}
-      <ClubMarquee />
+      <About/>
+      <Counter/>
       <Speakers />
       <Phases />
       <Events />

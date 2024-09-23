@@ -4,6 +4,10 @@ import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
 
 const Registration = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    window.location.href = "https://forms.gle/bYtspEc4xos4wyCv8";
+  };
   return (
     <section id="registration">
       <div className="flex w-full flex-col gap-8 p-4 py-10 sm:p-10 md:flex-row lg:px-16">
@@ -31,7 +35,7 @@ const Registration = () => {
             <h2 className="text-xl font-bold text-neutral-200">
               Register to Lumino
             </h2>
-            <form className="mb-4 mt-8">
+            <form onSubmit={handleSubmit} className="mb-4 mt-8">
               <LabelInputContainer className="z-50 mb-4">
                 <Label htmlFor="firstname">Full Name</Label>
                 <Input id="firstname" placeholder="Tyler" type="text" />

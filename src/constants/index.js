@@ -5,9 +5,9 @@ export const NavbarLinks = [
     route: "#home",
   },
   {
-    title: "Info",
-    name: "info",
-    route: "#info",
+    title: "About",
+    name: "about",
+    route: "#about",
   },
   {
     title: "Speakers",
@@ -24,23 +24,21 @@ export const NavbarLinks = [
     name: "events",
     route: "#events",
   },
-  {
-    title: "Register",
-    name: "registration",
-    route: "#registration",
-  },
 ];
 export const PreEvents = [
   {
     id: 1,
-    url: "/posters/pre-event-1.jpg"
+    image: "/posters/pre-event-1.jpg",
+    url: "https://bit.ly/lumino_Photo_comp",
   },
   {
     id: 2,
-    url: "/posters/pre-event-2.jpg"
+    image: "/posters/pre-event-2.jpg",
+    url: "https://bit.ly/lumino_sticker",
   },
   {
     id: 3,
-    url: "/posters/pre-event-3.jpg"
+    image: "/posters/pre-event-3.jpg",
+    url: "https://bit.ly/lumino_card",
   },
 ];

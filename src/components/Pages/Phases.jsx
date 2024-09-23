@@ -21,7 +21,7 @@ const array = [
     name: "IDEATHON",
     phase: "01",
     option: "REGISTER",
-    date: "28 SEPTEMBER 2024",
+    date: "5 OCTOBER 2024",
     active: true,
   },
   {
@@ -82,13 +82,13 @@ const Phases = () => {
                 </CardContent>
                 <CardFooter className="flex flex-col items-center justify-center rounded-lg pt-5">
                   <p className="arial-fonnt mb-2">{obj.date}</p>
-                  <Button
-                    disabled={!obj?.active}
+                  <a
+                    href={obj.active ? "#registration" : "#phases"}
                     variant="outline"
-                    className="w-56 rounded-[0.6rem] border-none bg-white/30 font-bold text-white hover:bg-white/30 md:font-semibold"
+                    className={`flex w-56 justify-center rounded-[0.6rem] border-none bg-white/30 p-2 text-sm font-bold text-white md:font-semibold ${!obj?.active && "opacity-60"}`}
                   >
                     {obj.option}
-                  </Button>
+                  </a>
                 </CardFooter>
               </Card>
             </div>

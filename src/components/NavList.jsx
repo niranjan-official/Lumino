@@ -22,12 +22,12 @@ const NavList = ({ activeSection }) => {
         className={cn(
           "flex items-center gap-1 pb-1 transition-all duration-300",
           {
-            "font-semibold text-white": activeSection === "info",
+            "font-semibold text-white": activeSection === "about",
           },
         )}
       >
         {/* <FadeUp delay={key*0.1} > */}
-        <a href={"#info"}>INFO</a>
+        <a href={"#about"}>ABOUT</a>
         {/* </FadeUp> */}
       </div>
       <div
