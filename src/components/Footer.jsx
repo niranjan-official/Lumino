@@ -32,7 +32,7 @@ const Footer = () => {
           </a>
           
           <a href="mailto:luminoprc@gmail.com">
-          <IoMdMail size={25} />
+          <IoMdMail size={30} />
           </a>
           {/* <BsTwitterX size={25} /> */}
         </div>
