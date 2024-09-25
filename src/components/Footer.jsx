@@ -24,13 +24,13 @@ const Footer = () => {
       </div>
       <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700" />
       <div className="flex w-full justify-center text-white md:justify-end">
-        <div className="flex items-center gap-5">
+        {/* <div className="flex items-center gap-5">
           <FaInstagram size={25} />
           <FaFacebookF size={25} />
           <FaPhoneAlt size={25} />
           <BsTwitterX size={25} />
           <IoMdMail size={25} />
-        </div>
+        </div> */}
       </div>
     </footer>
   );

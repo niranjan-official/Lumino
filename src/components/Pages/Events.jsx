@@ -7,11 +7,23 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/EventCarousel";
-import { PreEvents } from "../../constants";
+import { MainEvents, PreEvents } from "../../constants";
 import UnderLine from "../UnderLine";
 
 const Events = () => {
   const [isActive, setIsActive] = useState("pre");
+  const [transitionState, setTransitionState] = useState(false);
+
+  const handleToggle = (type) => {
+    if (isActive !== type) {
+      setTransitionState(true);
+      setTimeout(() => {
+        setIsActive(type);
+        setTransitionState(false);
+      }, 300);
+    }
+  };
+
   return (
     <section id="events">
       <div className="flex w-full flex-col items-center bg-zinc-900/70 p-4 py-10 sm:p-10 lg:px-16">
@@ -25,7 +37,7 @@ const Events = () => {
         </p>
         <div className="z-40 mt-4 flex overflow-hidden rounded-[0.6rem] bg-zinc-800 shadow-inner shadow-black">
           <button
-            onClick={() => setIsActive("pre")}
+            onClick={() => handleToggle("pre")}
             className={`arial-font p-2 px-6 tracking-wider md:px-16 ${
               isActive === "pre"
                 ? "rounded-r-[0.5rem] bg-zinc-700 shadow-md"
@@ -35,7 +47,7 @@ const Events = () => {
             PRE EVENTS
           </button>
           <button
-            onClick={() => setIsActive("main")}
+            onClick={() => handleToggle("main")}
             className={`arial-font p-2 px-6 tracking-wider md:px-16 ${
               isActive === "main"
                 ? "rounded-l-[0.5rem] bg-zinc-700 shadow-md"
@@ -45,7 +57,11 @@ const Events = () => {
             MAIN EVENTS
           </button>
         </div>
-        <div className="mt-5 flex w-full justify-center px-8 md:mt-8 md:w-3/4">
+        <div
+          className={`mt-5 flex w-full justify-center px-8 transition-opacity duration-500 md:mt-8 md:w-3/4 ${
+            transitionState ? "opacity-0" : "opacity-100"
+          }`}
+        >
           <EventCarousel
             opts={{
               align: "start",
@@ -54,22 +70,47 @@ const Events = () => {
             className="w-full"
           >
             <CarouselContent>
-              {PreEvents.map((event) => (
-                <CarouselItem key={event.id} className="w-full md:basis-1/3">
-                  <div className="flex flex-col items-center gap-4 p-1">
-                    <Card className="w-full border-0">
-                      <img
-                        src={event.image}
-                        className="h-auto w-full shadow-md shadow-neutral-700"
-                        alt=""
-                      />
-                    </Card>
-                    <button onClick={()=>{ window.location.href = event.url }} className="arial-font rounded-[0.6rem] bg-white p-2 tracking-wider text-black shadow-md shadow-neutral-700">
-                      REGISTER NOW
-                    </button>
-                  </div>
-                </CarouselItem>
-              ))}
+              {isActive === "pre"
+                ? PreEvents.map((event) => (
+                    <CarouselItem
+                      key={event.id}
+                      className="w-full md:basis-1/3"
+                    >
+                      <div className="flex flex-col items-center gap-4 p-1">
+                        <Card className="w-full border-0">
+                          <img
+                            src={event.image}
+                            className="h-auto w-full shadow-md shadow-neutral-700"
+                            alt=""
+                          />
+                        </Card>
+                        <button
+                          onClick={() => {
+                            window.location.href = event.url;
+                          }}
+                          className="arial-font rounded-[0.6rem] bg-white p-2 tracking-wider text-black shadow-md shadow-neutral-700"
+                        >
+                          REGISTER NOW
+                        </button>
+                      </div>
+                    </CarouselItem>
+                  ))
+                : MainEvents.map((event) => (
+                    <CarouselItem
+                      key={event.id}
+                      className="w-full md:basis-1/3"
+                    >
+                      <div className="flex flex-col items-center gap-4 p-1">
+                        <Card className="w-full border-0">
+                          <div className="flex h-64 w-full items-center justify-center rounded-3xl border border-white bg-slate-950/50">
+                            <p className="phase-font text-center text-5xl leading-8">
+                              Coming <br /> Soon
+                            </p>
+                          </div>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  ))}
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />

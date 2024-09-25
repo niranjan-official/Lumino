@@ -18,9 +18,9 @@ const Info = () => {
             insights, <br /> essential skills and valuable networking
             oppertunities.
           </p>
-          <button className="mt-4 rounded-[0.6rem] bg-white p-3 font-bold text-black shadow-md md:mt-6 md:text-xl md:font-semibold">
+          <a href="#about" className="mt-4 rounded-[0.6rem] bg-white p-3 font-bold text-black shadow-md md:mt-6 md:text-xl md:font-semibold">
             Get Started Now
-          </button>
+          </a>
         </div>
       </div>
     </section>
