@@ -5,12 +5,12 @@ const About = () => {
   return (
     <section id="about">
       <div className="flex flex-col">
-        <div className="flex w-full flex-col items-center bg-zinc-900/70 p-6 py-10 sm:px-10 lg:px-16">
-          <div className="text-center">
-            <h5 className="econo-light text-2xl font-semibold tracking-widest">
+        <div className="flex w-full flex-col items-center bg-zinc-900/70 p-6 py-10 sm:px-10 lg:px-16 xl:px-36">
+          <div className="text-center flex flex-col items-center">
+            <h5 className="econo-light text-2xl xl:text-4xl font-semibold tracking-widest">
               AGENDA
             </h5>
-            <p className="econo-light mt-5 text-xl text-neutral-300 sm:text-3xl">
+            <p className="econo-light mt-5 text-xl text-neutral-300 sm:text-3xl xl:w-3/4">
               LUMINO Bootcamp is designed as a structured, multi-phase program
               aimed at empowering aspiring professionals. The journey begins
               with a focus on enhancing essential interpersonal and
@@ -26,11 +26,11 @@ const About = () => {
         </div>
         <ClubMarquee />
         <div className="flex w-full flex-col items-center bg-zinc-900/70 p-6 py-10 sm:px-10 lg:px-16">
-          <div className="text-center">
-            <h5 className="econo-light text-2xl font-semibold tracking-widest">
+          <div className="text-center flex flex-col items-center">
+            <h5 className="econo-light text-2xl xl:text-4xl font-semibold tracking-widest">
               Why LUMINO ?
             </h5>
-            <p className="econo-light mt-5 text-xl text-neutral-300 sm:text-3xl">
+            <p className="econo-light mt-5 text-xl text-neutral-300 sm:text-3xl xl:text-4xl xl:w-3/4">
               Join Lumino to develop into a well-rounded professional equipped
               with essential soft skills, creative problem-solving abilities,
               and advanced technical expertise. Lumino prepares you for success
