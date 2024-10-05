@@ -28,6 +28,7 @@ export const NavbarLinks = [
 export const PreEvents = [
   {
     id: 1,
+    
     image: "/posters/pre-event-1.jpg",
     url: "https://bit.ly/lumino_Photo_comp",
   },

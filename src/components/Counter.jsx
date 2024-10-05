@@ -5,18 +5,18 @@ const Counter = () => {
   const [mins, setmins] = useState(0);
   const [secs, setsecs] = useState(0);
 
-  const deadline = "October, 05, 2024";
-  const getTime = () => {
-    const time = Date.parse(deadline) - Date.now();
-    setdays(Math.floor(time / (1000 * 60 * 60 * 24)));
-    sethours(Math.floor((time / (1000 * 60 * 60)) % 24));
-    setmins(Math.floor((time / 1000 / 60) % 60));
-    setsecs(Math.floor((time / 1000) % 60));
-  };
-  useEffect(() => {
-    const interval = setInterval(() => getTime(deadline), 1000);
-    return () => clearInterval(interval);
-  }, []);
+  // const deadline = "October, 05, 2024";
+  // const getTime = () => {
+  //   const time = Date.parse(deadline) - Date.now();
+  //   setdays(Math.floor(time / (1000 * 60 * 60 * 24)));
+  //   sethours(Math.floor((time / (1000 * 60 * 60)) % 24));
+  //   setmins(Math.floor((time / 1000 / 60) % 60));
+  //   setsecs(Math.floor((time / 1000) % 60));
+  // };
+  // useEffect(() => {
+  //   const interval = setInterval(() => getTime(deadline), 1000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <div className="flex flex-col items-center p-6 py-10 text-center sm:px-10 lg:px-16">
@@ -57,6 +57,7 @@ const Counter = () => {
           <p className="text-xs text-neutral-300 text-secondary">Seconds</p>
         </div>
       </div>
+      <span className="text-2xl font-semibold mt-4">The Event has begun !</span>
       <div className="mt-8 h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700" />
     </div>
   );
