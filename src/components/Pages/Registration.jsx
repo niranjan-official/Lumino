@@ -38,7 +38,7 @@ const Registration = () => {
             <form onSubmit={handleSubmit} className="mb-4 mt-8">
               <LabelInputContainer className="z-50 mb-4">
                 <Label htmlFor="firstname">Full Name</Label>
-                <Input id="firstname" placeholder="Tyler" type="text" />
+                <Input id="firstname" placeholder="Tyler" type="text" required />
               </LabelInputContainer>
               <LabelInputContainer className="mb-4">
                 <Label htmlFor="email">Email Address</Label>
@@ -46,6 +46,7 @@ const Registration = () => {
                   id="email"
                   placeholder="projectmayhem@fc.com"
                   type="email"
+                  required
                 />
               </LabelInputContainer>
               <LabelInputContainer className="mb-4">
@@ -54,6 +55,7 @@ const Registration = () => {
                   id="number"
                   placeholder="+91 9876543222"
                   type="numeric"
+                  required
                 />
               </LabelInputContainer>
 
