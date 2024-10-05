@@ -84,14 +84,6 @@ const Events = () => {
                             alt=""
                           />
                         </Card>
-                        <button
-                          onClick={() => {
-                            window.location.href = event.url;
-                          }}
-                          className="arial-font rounded-[0.6rem] bg-white p-2 tracking-wider text-black shadow-md shadow-neutral-700"
-                        >
-                          REGISTER NOW
-                        </button>
                       </div>
                     </CarouselItem>
                   ))
@@ -102,11 +94,11 @@ const Events = () => {
                     >
                       <div className="flex flex-col items-center gap-4 p-1">
                         <Card className="w-full border-0">
-                          <div className="flex h-64 w-full items-center justify-center rounded-3xl border border-white bg-slate-950/50">
-                            <p className="phase-font text-center text-5xl leading-8">
-                              Coming <br /> Soon
-                            </p>
-                          </div>
+                          <img
+                            src={event.image}
+                            className="h-auto w-full shadow-md shadow-neutral-700"
+                            alt=""
+                          />
                         </Card>
                       </div>
                     </CarouselItem>

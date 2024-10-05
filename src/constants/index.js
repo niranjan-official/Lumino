@@ -28,7 +28,6 @@ export const NavbarLinks = [
 export const PreEvents = [
   {
     id: 1,
-    
     image: "/posters/pre-event-1.jpg",
     url: "https://bit.ly/lumino_Photo_comp",
   },
@@ -46,17 +45,17 @@ export const PreEvents = [
 export const MainEvents = [
   {
     id: 1,
-    image: "/posters/pre-event-1.jpg",
+    image: "/posters/main/event-1.jpg",
     url: "https://bit.ly/lumino_Photo_comp",
   },
   {
     id: 2,
-    image: "/posters/pre-event-2.jpg",
-    url: "https://bit.ly/lumino_sticker",
+    image: "/posters/main/event-1.jpg",
+    url: "https://bit.ly/lumino_Photo_comp",
   },
   {
     id: 3,
-    image: "/posters/pre-event-3.jpg",
-    url: "https://bit.ly/lumino_card",
+    image: "/posters/main/event-1.jpg",
+    url: "https://bit.ly/lumino_Photo_comp",
   },
 ];

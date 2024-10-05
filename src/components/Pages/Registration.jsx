@@ -60,10 +60,12 @@ const Registration = () => {
               </LabelInputContainer>
 
               <button
-                className="relative mt-4 h-10 w-full rounded-[0.6rem] bg-zinc-900 font-medium text-white shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+                disabled={true}
+                className="opacity-70 relative mt-4 h-10 w-full rounded-[0.6rem] bg-zinc-900 font-semibold text-white shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
                 type="submit"
               >
-                Register Now &rarr;
+                {/* Register Now &rarr; */}
+                <span>Closed</span>
               </button>
 
               <div className="mt-8 h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700" />

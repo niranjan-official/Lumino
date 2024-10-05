@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -20,9 +19,9 @@ const array = [
   {
     name: "IDEATHON",
     phase: "01",
-    option: "REGISTER",
+    option: "CLOSED",
     date: "5 OCTOBER 2024",
-    active: true,
+    active: false,
   },
   {
     name: "DESIGN",
@@ -70,7 +69,7 @@ const Phases = () => {
             >
               <Card
                 className={`phase flex transform flex-col items-center justify-center border-none transition-transform duration-300 ${
-                  obj.active && "md:scale-110"
+                  obj.phase === "01" && "md:scale-110"
                 }`}
               >
                 <CardHeader className="flex flex-col items-center justify-center py-12 text-5xl">
